@@ -47,7 +47,7 @@ public class BookEntityRepositoryIntegrationTest {
         AuthorEntity authorEntityC = TestDataUtil.createTestAuthorEntityC();
         BookEntity bookEntityA = TestDataUtil.createTestBookEntityA(authorEntityA);
         BookEntity bookEntityB = TestDataUtil.createTestBookEntityB(authorEntityB);
-        BookEntity bookEntityC = TestDataUtil.createTestBookEntityB(authorEntityC);
+        BookEntity bookEntityC = TestDataUtil.createTestBookEntityC(authorEntityC);
 
         underTest.save(bookEntityA);
         underTest.save(bookEntityB);

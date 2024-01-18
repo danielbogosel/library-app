@@ -59,8 +59,10 @@ public class AuthorControllerIntegrationTest {
                         .content(authorJson)
         ).andExpect(
                 MockMvcResultMatchers.jsonPath("$.id").isNumber()
-        ).andExpect(MockMvcResultMatchers.jsonPath("$.name").isString()
-        ).andExpect(MockMvcResultMatchers.jsonPath("$.age").isNumber()
+        ).andExpect(
+                MockMvcResultMatchers.jsonPath("$.name").isString()
+        ).andExpect(
+                MockMvcResultMatchers.jsonPath("$.age").isNumber()
         );
     }
 }
